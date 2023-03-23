@@ -1,4 +1,4 @@
-# target/ # need ignore , github actions needs it to build image
+target/
 pom.xml.tag
 pom.xml.releaseBackup
 pom.xml.versionsBackup
