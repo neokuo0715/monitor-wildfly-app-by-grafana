@@ -1,0 +1,2 @@
+/core-service=management/management-interface=http-interface:write-attribute(name=console-enabled, value=true)
+/core-service=management/management-interface=http-interface:read-resource
