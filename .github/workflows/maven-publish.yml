@@ -38,4 +38,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: user/app:latest
+        tags: what2468ba/wildfly-todo-app:latest
