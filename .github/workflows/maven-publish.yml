@@ -23,7 +23,7 @@ jobs:
         settings-path: ${{ github.workspace }} # location for the settings.xml file
 
     - name: Build with Maven
-      run: mvn clean package 
+      run: mvn clean package -P bootable-jar-openshift
     - name: Set up QEMU
       uses: docker/setup-qemu-action@v2
     - name: Set up Docker Buildx
@@ -36,6 +36,5 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
-        context: .
         push: true
         tags: user/app:latest
