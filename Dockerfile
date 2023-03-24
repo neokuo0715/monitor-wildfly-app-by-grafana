@@ -2,8 +2,6 @@
 # from redhat website: https://catalog.redhat.com/software/containers/ubi8/openjdk-11/5dd6a4b45a13461646f677f4?container-tabs=gti&gti-tabs=unauthenticated
 FROM registry.access.redhat.com/ubi8/openjdk-11 
 WORKDIR /app
-RUN echo pwd
-RUN tree ./
 COPY ./target/todo-backend-bootable.jar /app/
 
 # 8080 for services 、9990 for web console  
